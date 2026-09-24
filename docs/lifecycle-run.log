@@ -5,50 +5,14 @@ PoolRisk lifecycle → 0x5765b4984128Fc340285e7e8F8ecfE5b1Fef6901 (demo instance
   ✔ refused: 0x123 ethereum 
   scan_pool("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "solana", "") → ACCEPTED 51s tx 0x46822193e8ddf478505e359aca561b72a3799596bef9788e1abd8da7cadcde48  {"claim_with":"","reason":"unsupported chain 'solana'; one of ethereum, arbitrum, base, polygon","refunded_wei":"0","status":"REJECTED"}
   ✔ refused: 0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640 solana 
-GenLayer RPC error (eth_gasPrice): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … scan_pool attempt 1 hit transient RPC noise, waiting 4s
-GenLayer RPC error (eth_getTransactionByHash): terminated
   scan_pool("0x0000000000000000000000000000000000000000", "ethereum", "") → FINALIZED 173s tx 0x729b58e4d87e7cbbd64e60d4df2bd783a5a955f1cb7fb1c998a58c52d5b8fe64  {"claim_with":"","reason":"the zero address is not a pool","refunded_wei":"0","status":"REJECTED"}
   ✔ refused: 0x0000000000000000000000000000000000000000 ethereum 
-GenLayer RPC error (sim_getFeeConfig): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … fee attempt 1 hit transient RPC noise, waiting 2s
-GenLayer RPC error (eth_estimateGas): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-Gas estimation failed, using default 200_000: UnknownRpcError: An unknown RPC error occurred.
-
-Details: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-Version: viem@2.56.8
-    at withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:127:31)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30) {
-  details: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`,
-  docsPath: undefined,
-  metaMessages: undefined,
-  shortMessage: 'An unknown RPC error occurred.',
-  version: '2.56.8',
-  code: -1,
-  [cause]: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-      at JSON.parse (<anonymous>)
-      at parseJSONFromBytes (node:internal/deps/undici/undici:5880:19)
-      at successSteps (node:internal/deps/undici/undici:5861:27)
-      at fullyReadBody (node:internal/deps/undici/undici:4753:9)
-      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-      at async consumeBody (node:internal/deps/undici/undici:5870:7)
-      at async Object.request (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/genlayer-js/dist/index.js:5736:22)
-      at async withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:30:24)
-      at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30)
-}
   scan_pool("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "ethereum", "not-a-uuid") → ACCEPTED 158s tx 0x5742bf73c983bb0ea5f8cb4a54acbd0218855e97513b9a5c5e5862826f680b31  {"claim_with":"","reason":"llama_pool_id must be a DeFi Llama pool id (8-4-4-4-12 hex), or left empty","refunded_wei":"0","status":"REJECTED"}
   ✔ refused: 0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640 ethereum not-a-uuid
-GenLayer RPC error (gen_call): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … get_stats attempt 1 hit transient RPC noise, waiting 4s
   ✔ no pool registered by a refusal (0 → 0)
   ✔ each refusal counted as a refusal (0 → 4)
 
 2. no DeFi Llama listing
-GenLayer RPC error (eth_sendRawTransaction): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … scan_pool attempt 1 hit transient RPC noise, waiting 4s
-GenLayer RPC error (eth_getTransactionCount): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … scan_pool attempt 2 hit transient RPC noise, waiting 8s
   scan_pool("0x5969efdde3cf5c0d9a88ae51e47d721096a97203", "arbitrum", "") → ACCEPTED 172s tx 0x5adda95545895342913699648090774044a6a8b933c71da40092f1ccd9acb92e  {"content_hash":"ff940288c7df961f","overall_score":0,"pool_id":1,"pool_identified":false,"previous_score":null,"risk_delta":null,"risk_level":"INCONCLUSIVE","rug_flags":"VERY_NEW","scan_id":1,"scanned":true,"status":"OK"}
   ✔ unlisted pool is INCONCLUSIVE (status INCONCLUSIVE)
   ✔ no score without both sources
@@ -64,33 +28,6 @@ GenLayer RPC error (eth_getTransactionCount): Unexpected token '<', "<!DOCTYPE "
 4. scan, then rescan
   scan_pool("0x853ee4b2a13f8a742d64c8f088be7ba2131f670d", "polygon", "f8adcdd5-71d2-4460-956e-7ccdd53b16fa") → ACCEPTED 36s tx 0xdbbc561cf58bd3eaae63e290ed4e71959959c0004a7c92871852fba1c489543a  {"content_hash":"8e3096354dda4f42","overall_score":76,"pool_id":3,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"MODERATE","rug_flags":"","scan_id":3,"scanned":true,"status":"OK"}
   ✔ real pool SCORED (MODERATE 76/100)
-GenLayer RPC error (eth_estimateGas): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-Gas estimation failed, using default 200_000: UnknownRpcError: An unknown RPC error occurred.
-
-Details: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-Version: viem@2.56.8
-    at withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:127:31)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30) {
-  details: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`,
-  docsPath: undefined,
-  metaMessages: undefined,
-  shortMessage: 'An unknown RPC error occurred.',
-  version: '2.56.8',
-  code: -1,
-  [cause]: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-      at JSON.parse (<anonymous>)
-      at parseJSONFromBytes (node:internal/deps/undici/undici:5880:19)
-      at successSteps (node:internal/deps/undici/undici:5861:27)
-      at fullyReadBody (node:internal/deps/undici/undici:4753:9)
-      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-      at async consumeBody (node:internal/deps/undici/undici:5870:7)
-      at async Object.request (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/genlayer-js/dist/index.js:5736:22)
-      at async withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:30:24)
-      at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30)
-}
-GenLayer RPC error (eth_gasPrice): fetch failed
-  … rescan_pool attempt 1 hit transient RPC noise, waiting 4s
   rescan_pool(3) → ACCEPTED 79s tx 0xbb76a3eb1b2db8d04aa9dcbe8c5314fa60f88bca94085bb059e28342b2adeaeb  {"content_hash":"8e3096354dda4f42","overall_score":76,"pool_id":3,"pool_identified":true,"previous_score":76,"risk_delta":0,"risk_level":"MODERATE","rug_flags":"","scan_id":4,"scanned":true,"status":"OK"}
   ✔ rescan by a wallet that did not register it is stored (scans 1 → 2)
   ✔ previous score kept (76)
@@ -98,10 +35,6 @@ GenLayer RPC error (eth_gasPrice): fetch failed
   ✔ get_risk_history has 2 scans, last delta 0
 
 5. duplicate
-GenLayer RPC error (eth_sendRawTransaction): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … scan_pool attempt 1 hit transient RPC noise, waiting 4s
-GenLayer RPC error (eth_sendRawTransaction): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-  … scan_pool attempt 2 hit transient RPC noise, waiting 8s
   scan_pool("0x853EE4B2A13F8A742D64C8F088BE7BA2131F670D", "polygon", "f8adcdd5-71d2-4460-956e-7ccdd53b16fa") → ACCEPTED 221s tx 0x7b2d9f56980900b8762820bad01d567823e4b2a789acb7c46511e179137cb318  {"claim_with":"","pool_id":3,"reason":"pool #3 is already registered for this address; use rescan_pool(3)","refunded_wei":"0","status":"REJECTED"}
   ✔ duplicate refused with pool_id 3
   ✔ register unchanged

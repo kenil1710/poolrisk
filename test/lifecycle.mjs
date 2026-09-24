@@ -99,9 +99,10 @@ expect(hist.scans === p4b.scans && hist.history.at(-1).delta === p4b.risk_delta,
 
 // 5. duplicate
 note("\n5. duplicate");
+const poolsBeforeDup = (await view("get_stats")).pools;
 const { ret: dup } = await write(lp, "scan_pool", [real.address.toUpperCase().replace("0X", "0x"), real.chain, real.llama]);
 expect(dup === null || (dup.status === "REJECTED" && dup.pool_id === p4.pool_id), `duplicate refused with pool_id ${dup?.pool_id}`);
-expect((await view("get_stats")).pools === (await view("get_stats")).pools, "register unchanged");
+expect((await view("get_stats")).pools === poolsBeforeDup, `register unchanged (${poolsBeforeDup} pools)`);
 
 // 6. pause
 note("\n6. pause");
