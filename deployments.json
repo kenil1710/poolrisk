@@ -1,0 +1,33 @@
+{
+  "deployments": {
+    "studiodev": {
+      "network": "studiodev",
+      "chain_id": 61997,
+      "PoolRisk": {
+        "address": "0x9b85EA2DCE3E05406f996200ae719fC54Fe5bC53",
+        "deploy_tx": "0xd052d8430e2873e58baec4f5e94747f5ec8a5a72530c3f48893d40e471429962",
+        "source_bytes": 100766,
+        "source_sha256": "6845248f8dfcccade3e668b2b41be44a0ae9b4e3245e854167349c63b66e2dcf",
+        "owner": "0xf1CB7Dd4F778903CBA0c68E5023A699b3d210c12",
+        "rubric_version": "1.0.0",
+        "cooldown_s": 120,
+        "stall_ttl_s": 3600,
+        "payable_methods": 0,
+        "deployed_at": "2026-09-24T06:37:37.539Z"
+      },
+      "explorer": "https://explorer-studio-dev.genlayer.com/",
+      "PoolRiskDemo": {
+        "address": "0x5765b4984128Fc340285e7e8F8ecfE5b1Fef6901",
+        "deploy_tx": "0x003b8b605d7ae68c904a88d448d26fdcde45027cff4c3bf524d08b51c914d8af",
+        "source_bytes": 100766,
+        "source_sha256": "6845248f8dfcccade3e668b2b41be44a0ae9b4e3245e854167349c63b66e2dcf",
+        "owner": "0xf1CB7Dd4F778903CBA0c68E5023A699b3d210c12",
+        "rubric_version": "1.0.0",
+        "cooldown_s": 0,
+        "stall_ttl_s": 60,
+        "payable_methods": 0,
+        "deployed_at": "2026-09-24T06:37:43.751Z"
+      }
+    }
+  }
+}

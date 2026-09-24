@@ -1,0 +1,100 @@
+{
+ "now": 1790230450,
+ "facts": {
+  "pool_id": 0,
+  "pool_address": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+  "chain": "ethereum",
+  "llama_id": "25171c4c-1877-449a-9f88-45a9f153ee31",
+  "now": 1790230450
+ },
+ "fetches": [
+  {
+   "file": "00.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/addresses/0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "01.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/main-page/blocks",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "02.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/blocks/26045400",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "03.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/addresses/0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7/token-transfers?block_number=26045400&index=0",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "04.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/transactions/0x20793bbf260912aae189d5d261ff003c9b9166da8191d8f9d63ff1c7722f3ac6",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "05.json",
+   "method": "POST",
+   "url": "https://ethereum-rpc.publicnode.com",
+   "body": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_call\", \"params\": [{\"to\": \"0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7\", \"data\": \"0x8da5cb5b\"}, \"latest\"]}",
+   "status": 200
+  },
+  {
+   "file": "06.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/poolsEnriched?pool=25171c4c-1877-449a-9f88-45a9f153ee31",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "07.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/chart/25171c4c-1877-449a-9f88-45a9f153ee31",
+   "body": "",
+   "status": 200
+  }
+ ],
+ "expected_ev": {
+  "bs_state": "OK",
+  "contract_name": "TriPool",
+  "owner_state": "OWNED",
+  "top_csv": "0xc270b3b858c335b6ba5d5b10e2da8a09976005ad:11:CV:Curve pax-usdp3CRV-f Pool|0x666fedd4cdd4e890a5ad20e7b60975409435a64a:6:CV:MainnetSettler|0xad6cea45f98444a922a2b4fe96b8c90f0862d2f4:6:CV:Squid Multicall 2|0x2c01b4a79f39a05b44b28b0719ce36c17c483dbe:4:CU:|0x45312ea0eff7e09c83cbe249fa1d7598c4c8cd4e:4:CV:Router v1.2",
+  "window_hash": "2cbfcf83367cf241",
+  "ll_state": "OK",
+  "project": "curve-dex",
+  "symbol": "DAI-USDC-USDT",
+  "exposure": "multi",
+  "il_risk": "no",
+  "snap_day": "2026-09-23",
+  "created_ts": 1599414978,
+  "window_block": 26045400,
+  "window_end_ts": 1790229611,
+  "window_n": 50,
+  "window_tx": 39,
+  "window_unique": 19,
+  "top_legs": 11,
+  "window_oldest_ts": 1790207783,
+  "window_newest_ts": 1790228435,
+  "tvl_usd": 159952109,
+  "tvl_7d_usd": 160517172,
+  "apy_cp": 0,
+  "apy_mean30_cp": 0,
+  "history_days": 1679,
+  "llama_first_ts": 1644537600,
+  "verified": true,
+  "proxy": false,
+  "top_is_contract": true,
+  "stablecoin": true
+ }
+}

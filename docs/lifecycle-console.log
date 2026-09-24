@@ -1,0 +1,47 @@
+PoolRisk lifecycle → 0x5765b4984128Fc340285e7e8F8ecfE5b1Fef6901 (demo instance)  2026-09-24T06:47:39.873Z
+
+1. refusals
+  scan_pool("0x123", "ethereum", "") → ACCEPTED 21s tx 0xbf3b9eed44b9df812cd6b93ac50fa61e5baa7e1fea92e8d8a2f64c9ed9f73b50  {"claim_with":"","reason":"pool_address must be a 0x-prefixed 40-hex-digit address","refunded_wei":"0","status":"REJECTED"}
+  ✔ refused: 0x123 ethereum 
+  scan_pool("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "solana", "") → ACCEPTED 51s tx 0x46822193e8ddf478505e359aca561b72a3799596bef9788e1abd8da7cadcde48  {"claim_with":"","reason":"unsupported chain 'solana'; one of ethereum, arbitrum, base, polygon","refunded_wei":"0","status":"REJECTED"}
+  ✔ refused: 0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640 solana 
+GenLayer RPC error (eth_gasPrice): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … scan_pool attempt 1 hit transient RPC noise, waiting 4s
+GenLayer RPC error (eth_getTransactionByHash): terminated
+  scan_pool("0x0000000000000000000000000000000000000000", "ethereum", "") → FINALIZED 173s tx 0x729b58e4d87e7cbbd64e60d4df2bd783a5a955f1cb7fb1c998a58c52d5b8fe64  {"claim_with":"","reason":"the zero address is not a pool","refunded_wei":"0","status":"REJECTED"}
+  ✔ refused: 0x0000000000000000000000000000000000000000 ethereum 
+GenLayer RPC error (sim_getFeeConfig): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … fee attempt 1 hit transient RPC noise, waiting 2s
+GenLayer RPC error (eth_estimateGas): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Gas estimation failed, using default 200_000: UnknownRpcError: An unknown RPC error occurred.
+
+Details: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Version: viem@2.56.8
+    at withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:127:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30) {
+  details: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`,
+  docsPath: undefined,
+  metaMessages: undefined,
+  shortMessage: 'An unknown RPC error occurred.',
+  version: '2.56.8',
+  code: -1,
+  [cause]: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+      at JSON.parse (<anonymous>)
+      at parseJSONFromBytes (node:internal/deps/undici/undici:5880:19)
+      at successSteps (node:internal/deps/undici/undici:5861:27)
+      at fullyReadBody (node:internal/deps/undici/undici:4753:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async consumeBody (node:internal/deps/undici/undici:5870:7)
+      at async Object.request (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/genlayer-js/dist/index.js:5736:22)
+      at async withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:30:24)
+      at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30)
+}
+  scan_pool("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "ethereum", "not-a-uuid") → ACCEPTED 158s tx 0x5742bf73c983bb0ea5f8cb4a54acbd0218855e97513b9a5c5e5862826f680b31  {"claim_with":"","reason":"llama_pool_id must be a DeFi Llama pool id (8-4-4-4-12 hex), or left empty","refunded_wei":"0","status":"REJECTED"}
+  ✔ refused: 0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640 ethereum not-a-uuid
+GenLayer RPC error (gen_call): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … get_stats attempt 1 hit transient RPC noise, waiting 4s
+  ✔ no pool registered by a refusal (0 → 0)
+  ✔ each refusal counted as a refusal (0 → 4)
+
+2. no DeFi Llama listing

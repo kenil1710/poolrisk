@@ -1,0 +1,85 @@
+PoolRisk seed run 1 → 0x9b85EA2DCE3E05406f996200ae719fC54Fe5bC53  (2026-09-24T06:39:23.743Z)
+
+== Uniswap V3 USDC/WETH 0.05% (Ethereum)
+scan_pool ethereum 0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640 by lp1: ACCEPTED 20s tx 0x52792e2665e6cbe728804b971cf4c3b74b5e238b7566b5d63fadfdf5b4ed1fad → pool #1 {"content_hash":"1f0414e549812b31","overall_score":89,"pool_id":1,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"SAFE_POOL","rug_flags":"","scan_id":1,"scanned":true,"status":"OK"}
+  #1 SCORED SAFE_POOL 89/100 flags [] verify true
+  scores {"activity":10,"age":10,"apy_risk":8,"concentration":7,"stability":6,"tvl":10,"verification":10}
+  concentration {"allowed":"0,1","base":8,"bracket":"SPREAD","model_called":true,"penalty":1}
+  reason: SAFE_POOL 89/100. age 1967d (10, from creation), verification 10 (verified=yes, proxy=no, owner=NONE), TVL $100056624 on 2026-09-23 (10), 7d change -421bps (6), activity 13333 transfers/day (10), concentration 7 (base 8 - penalty 1), APY 10.35% (8). Flags: none.
+  hashes: content 1f0414e549812b31 blockscout 92df9bd5f40eac72 llama f1775d847f00cdfe
+
+== Curve 3pool DAI/USDC/USDT (Ethereum)
+scan_pool ethereum 0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7 by lp2: ACCEPTED 16s tx 0x7b4e65b71dbb503bf974d4a3486aed7666b67585f29fb65844a221cad23c15f5 → pool #2 {"content_hash":"22f2a7964145b747","overall_score":84,"pool_id":2,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"SAFE_POOL","rug_flags":"","scan_id":2,"scanned":true,"status":"OK"}
+  #2 SCORED SAFE_POOL 84/100 flags [] verify true
+  scores {"activity":6,"age":10,"apy_risk":10,"concentration":8,"stability":6,"tvl":10,"verification":8}
+  concentration {"allowed":"0,1","base":8,"bracket":"SPREAD","model_called":true,"penalty":0}
+  reason: SAFE_POOL 84/100. age 2208d (10, from creation), verification 8 (verified=yes, proxy=no, owner=OWNED), TVL $159952109 on 2026-09-23 (10), 7d change -36bps (6), activity 197 transfers/day (6), concentration 8 (base 8 - penalty 0), APY 0.00% (10). Flags: none.
+  hashes: content 22f2a7964145b747 blockscout e8a72b016ec567d1 llama a7e28fea523e869e
+
+== Camelot V3 PEAR/USDC (Arbitrum, smaller)
+GenLayer RPC error (eth_estimateGas): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Gas estimation failed, using default 200_000: UnknownRpcError: An unknown RPC error occurred.
+
+Details: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Version: viem@2.56.8
+    at withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:127:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30) {
+  details: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`,
+  docsPath: undefined,
+  metaMessages: undefined,
+  shortMessage: 'An unknown RPC error occurred.',
+  version: '2.56.8',
+  code: -1,
+  [cause]: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+      at JSON.parse (<anonymous>)
+      at parseJSONFromBytes (node:internal/deps/undici/undici:5880:19)
+      at successSteps (node:internal/deps/undici/undici:5861:27)
+      at fullyReadBody (node:internal/deps/undici/undici:4753:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async consumeBody (node:internal/deps/undici/undici:5870:7)
+      at async Object.request (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/genlayer-js/dist/index.js:5736:22)
+      at async withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:30:24)
+      at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30)
+}
+scan_pool arbitrum 0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba by lp3: ACCEPTED 93s tx 0x882727e6d9176eb9024f61fbb8a0c2cd538037e2b775c4d8729c2bb0bc4e96bd → pool #3 {"content_hash":"34432ae5e3de604a","overall_score":78,"pool_id":3,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"MODERATE","rug_flags":"","scan_id":3,"scanned":true,"status":"OK"}
+  #3 SCORED MODERATE 78/100 flags [] verify true
+  scores {"activity":8,"age":10,"apy_risk":6,"concentration":2,"stability":10,"tvl":6,"verification":10}
+  concentration {"allowed":"1,2","base":4,"bracket":"LEANING","model_called":true,"penalty":2}
+  reason: MODERATE 78/100. age 727d (10, from creation), verification 10 (verified=yes, proxy=no, owner=NONE), TVL $1164647 on 2026-09-23 (6), 7d change 4816bps (10), activity 3338 transfers/day (8), concentration 2 (base 4 - penalty 2), APY 36.93% (6). Flags: none.
+  hashes: content 34432ae5e3de604a blockscout 10ede27d26af7934 llama 5cb49ae81296b271
+
+== Uniswap V3 W0G/USDC (Base, days old)
+scan_pool base 0xe03cce449932219fc0ca28f3a4f784ce55de0c4e by lp4: ACCEPTED 32s tx 0xe595f685f6aed2c876b48514bf11d601cfb4bb1354c1c50da7313a3bc03a2ab8 → pool #4 {"content_hash":"56cc502312af6978","overall_score":47,"pool_id":4,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"HIGH_RISK","rug_flags":"VERY_NEW","scan_id":4,"scanned":true,"status":"OK"}
+  #4 SCORED HIGH_RISK 47/100 flags [VERY_NEW] verify true
+  scores {"activity":4,"age":0,"apy_risk":8,"concentration":7,"stability":0,"tvl":4,"verification":10}
+  concentration {"allowed":"0,1","base":8,"bracket":"SPREAD","model_called":true,"penalty":1}
+  reason: HIGH_RISK 47/100. age 1d (0, from llama_first_seen), verification 10 (verified=yes, proxy=no, owner=NONE), TVL $209596 on 2026-09-23 (4), 7d change unknown (0), activity 59 transfers/day (4), concentration 7 (base 8 - penalty 1), APY 9.07% (8). Flags: VERY_NEW.
+  hashes: content 56cc502312af6978 blockscout 2bece400001f5773 llama a60b30d38af08fec
+
+== Uniswap V2 WETH/BELONG (Base, new + unverified)
+scan_pool base 0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b by lp5: ACCEPTED 21s tx 0xa0188281596bb66d358a21c05829aaff3905d95f68f5c202efe4bd91cbcd4d4a → pool #5 {"content_hash":"0adb1907c1996bf6","overall_score":23,"pool_id":5,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"RUG_WARNING","rug_flags":"UNVERIFIED_SOURCE,VERY_NEW","scan_id":5,"scanned":true,"status":"OK"}
+  #5 SCORED RUG_WARNING 23/100 flags [UNVERIFIED_SOURCE,VERY_NEW] verify true
+  scores {"activity":6,"age":0,"apy_risk":2,"concentration":7,"stability":0,"tvl":4,"verification":0}
+  concentration {"allowed":"0,1","base":8,"bracket":"SPREAD","model_called":true,"penalty":1}
+  reason: RUG_WARNING 23/100. age 0d (0, from llama_first_seen), verification 0 (verified=no, proxy=no, owner=NONE), TVL $267670 on 2026-09-23 (4), 7d change unknown (0), activity 948 transfers/day (6), concentration 7 (base 8 - penalty 1), APY 221.88% (2). Flags: UNVERIFIED_SOURCE,VERY_NEW.
+  hashes: content 0adb1907c1996bf6 blockscout 1abf198d56865e67 llama 5f9c4661f12a2a6f
+
+== Aerodrome Slipstream AVNT/USDC (Base, extreme APY)
+scan_pool base 0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb by lp6: ACCEPTED 47s tx 0xb625e0694e228187fceab609941a7fb86528b194ea7e074371f7940bb86f71e7 → pool #6 {"content_hash":"76b68a923d9f8c4f","overall_score":54,"pool_id":6,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"HIGH_RISK","rug_flags":"EXTREME_APY,PROXY_CONTRACT","scan_id":6,"scanned":true,"status":"OK"}
+  #6 SCORED HIGH_RISK 54/100 flags [EXTREME_APY,PROXY_CONTRACT] verify true
+  scores {"activity":8,"age":10,"apy_risk":0,"concentration":3,"stability":8,"tvl":4,"verification":4}
+  concentration {"allowed":"0,1","base":4,"bracket":"SPREAD","model_called":true,"penalty":1}
+  reason: HIGH_RISK 54/100. age 381d (10, from creation), verification 4 (verified=yes, proxy=yes, owner=NONE), TVL $672170 on 2026-09-23 (4), 7d change 986bps (8), activity 2440 transfers/day (8), concentration 3 (base 4 - penalty 1), APY 15413.92% (0). Flags: EXTREME_APY,PROXY_CONTRACT.
+  hashes: content 76b68a923d9f8c4f blockscout df6dc942f810a079 llama 6c81f5f2178043e5
+
+== QuickSwap USDC/WETH (Polygon)
+scan_pool polygon 0x853ee4b2a13f8a742d64c8f088be7ba2131f670d by lp7: ACCEPTED 16s tx 0x8368f15d753e54516b4e264fc2fe1ea5b55d3eb03dd67e98740ebb6f39be692f → pool #7 {"content_hash":"8e3096354dda4f42","overall_score":76,"pool_id":7,"pool_identified":true,"previous_score":null,"risk_delta":null,"risk_level":"MODERATE","rug_flags":"","scan_id":7,"scanned":true,"status":"OK"}
+  #7 SCORED MODERATE 76/100 flags [] verify true
+  scores {"activity":6,"age":10,"apy_risk":10,"concentration":1,"stability":8,"tvl":6,"verification":10}
+  concentration {"allowed":"2,3","base":4,"bracket":"DOMINATED","model_called":true,"penalty":3}
+  reason: MODERATE 76/100. age 1686d (10, from llama_first_seen), verification 10 (verified=yes, proxy=no, owner=NONE), TVL $2363677 on 2026-09-23 (6), 7d change 614bps (8), activity 951 transfers/day (6), concentration 1 (base 4 - penalty 3), APY 3.01% (10). Flags: none.
+  hashes: content 8e3096354dda4f42 blockscout 5396ec3f229a5bd2 llama cd85fd0fce876b08
+
+stats: {"attempts":7,"balance_wei":"0","chain_balance_wei":"0","identity":"balance_wei == refundable_wei","latest_flag_counts":{"EXTREME_APY":1,"LOW_ACTIVITY":0,"LOW_TVL":0,"PROXY_CONTRACT":1,"TVL_CRASH":0,"UNVERIFIED_SOURCE":1,"VERY_NEW":2},"latest_level_counts":{"HIGH_RISK":2,"INCONCLUSIVE":0,"MODERATE":2,"RUG_WARNING":1,"SAFE_POOL":2},"ledger_balanced":true,"owner":"0xf1CB7Dd4F778903CBA0c68E5023A699b3d210c12","paused":false,"pool_status_counts":{"INCONCLUSIVE":0,"PENDING":0,"SCORED":7,"STALLED":0},"pools":7,"pools_by_chain":{"arbitrum":1,"base":3,"ethereum":2,"polygon":1},"refundable_wei":"0","refunded_wei":"0","refusals":0,"rubric_version":"1.0.0","scans":7,"stalled":0,"unsettled_attempts":0}
+wrote docs/seed-run1.log and docs/seed-run1-evidence.json

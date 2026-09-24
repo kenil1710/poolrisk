@@ -1,0 +1,9 @@
+node_modules/
+test/node_modules/
+.env
+.env.local
+.DS_Store
+__pycache__/
+*.pyc
+.accounts.json
+test/.accounts.json

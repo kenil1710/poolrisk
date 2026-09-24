@@ -1,0 +1,100 @@
+{
+ "now": 1790230468,
+ "facts": {
+  "pool_id": 0,
+  "pool_address": "0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb",
+  "chain": "base",
+  "llama_id": "eb27d0be-9de4-4ed9-8d36-a754e18d3358",
+  "now": 1790230468
+ },
+ "fetches": [
+  {
+   "file": "00.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/addresses/0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "01.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/main-page/blocks",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "02.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/blocks/51719400",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "03.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/addresses/0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb/token-transfers?block_number=51719400&index=0",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "04.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/transactions/0xc5fb05ed74a318c6f5d347760dfc8011fca5138d6914959938efe573ecae6b6d",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "05.json",
+   "method": "POST",
+   "url": "https://base-rpc.publicnode.com",
+   "body": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_call\", \"params\": [{\"to\": \"0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb\", \"data\": \"0x8da5cb5b\"}, \"latest\"]}",
+   "status": 200
+  },
+  {
+   "file": "06.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/poolsEnriched?pool=eb27d0be-9de4-4ed9-8d36-a754e18d3358",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "07.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/chart/eb27d0be-9de4-4ed9-8d36-a754e18d3358",
+   "body": "",
+   "status": 200
+  }
+ ],
+ "expected_ev": {
+  "bs_state": "OK",
+  "contract_name": "",
+  "owner_state": "NONE",
+  "top_csv": "0x61040e143a77f165ba44543af4a079f2c809d14b:15:CV:Slipstream Gauge Interaction|0x278d858f05b94576c1e6f73285886876ff6ef8d2:13:CU:SearcherStrategyExecutor|0xd48c780b3c48d7bb43cb69dc179d62726f798e50:12:EU:|0x51c72848c68a965f66fa7a88855f9f7784502a7f:4:CU:Market Maker 0x51c7...2a7f|0x8f10b468b06c6fd214b65f87778827f7d113f996:4:CU:",
+  "window_hash": "e5ebdc635640a7f3",
+  "ll_state": "OK",
+  "project": "aerodrome-slipstream",
+  "symbol": "AVNT-USDC",
+  "exposure": "multi",
+  "il_risk": "yes",
+  "snap_day": "2026-09-23",
+  "created_ts": 1757255055,
+  "window_block": 51719400,
+  "window_end_ts": 1790228147,
+  "window_n": 50,
+  "window_tx": 29,
+  "window_unique": 7,
+  "top_legs": 15,
+  "window_oldest_ts": 1790227177,
+  "window_newest_ts": 1790227843,
+  "tvl_usd": 672170,
+  "tvl_7d_usd": 611798,
+  "apy_cp": 1541392,
+  "apy_mean30_cp": 466673,
+  "history_days": 377,
+  "llama_first_ts": 1757459188,
+  "verified": true,
+  "proxy": true,
+  "top_is_contract": true,
+  "stablecoin": false
+ }
+}

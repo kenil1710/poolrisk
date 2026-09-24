@@ -1,0 +1,100 @@
+{
+ "now": 1790230445,
+ "facts": {
+  "pool_id": 0,
+  "pool_address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+  "chain": "ethereum",
+  "llama_id": "665dc8bc-c79d-4800-97f7-304bf368e547",
+  "now": 1790230445
+ },
+ "fetches": [
+  {
+   "file": "00.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/addresses/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "01.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/main-page/blocks",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "02.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/blocks/26045400",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "03.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/addresses/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640/token-transfers?block_number=26045400&index=0",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "04.json",
+   "method": "GET",
+   "url": "https://eth.blockscout.com/api/v2/transactions/0x125e0b641d4a4b08806bf52c0c6757648c9963bcda8681e4f996f09e00d4c2cc",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "05.json",
+   "method": "POST",
+   "url": "https://ethereum-rpc.publicnode.com",
+   "body": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_call\", \"params\": [{\"to\": \"0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640\", \"data\": \"0x8da5cb5b\"}, \"latest\"]}",
+   "status": 200
+  },
+  {
+   "file": "06.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/poolsEnriched?pool=665dc8bc-c79d-4800-97f7-304bf368e547",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "07.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/chart/665dc8bc-c79d-4800-97f7-304bf368e547",
+   "body": "",
+   "status": 200
+  }
+ ],
+ "expected_ev": {
+  "bs_state": "OK",
+  "contract_name": "UniswapV3Pool",
+  "owner_state": "NONE",
+  "top_csv": "0x51c72848c68a965f66fa7a88855f9f7784502a7f:8:CU:Market Maker 0x51c7...2a7f|0x8f10b468b06c6fd214b65f87778827f7d113f996:6:CU:|0x9edd29151ccfbc5417e618757cfe9139d2431224:6:CU:|0x49edcc5aab2e349c1f71c27c98fe9c65b01745b1:5:CV:XWIN Research Fund|0x4d146413c0dd1794019f9adee8d28304d0afee05:5:CV:TransparentUpgradeableProxy",
+  "window_hash": "1f04ce627d8d7765",
+  "ll_state": "OK",
+  "project": "uniswap-v3",
+  "symbol": "USDC-WETH",
+  "exposure": "multi",
+  "il_risk": "yes",
+  "snap_day": "2026-09-23",
+  "created_ts": 1620250931,
+  "window_block": 26045400,
+  "window_end_ts": 1790229611,
+  "window_n": 50,
+  "window_tx": 24,
+  "window_unique": 16,
+  "top_legs": 8,
+  "window_oldest_ts": 1790229287,
+  "window_newest_ts": 1790229587,
+  "tvl_usd": 100056624,
+  "tvl_7d_usd": 104451666,
+  "apy_cp": 1035,
+  "apy_mean30_cp": 1289,
+  "history_days": 1614,
+  "llama_first_ts": 1648339200,
+  "verified": true,
+  "proxy": false,
+  "top_is_contract": true,
+  "stablecoin": false
+ }
+}

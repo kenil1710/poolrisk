@@ -1,0 +1,630 @@
+{
+ "probe_address": "0x73a930669f3481A4b281997AeD8b7DFe23aBafba",
+ "at": "2026-09-24T06:19:30.368Z",
+ "pools": [
+  {
+   "chain": "ethereum",
+   "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+   "llama": "665dc8bc-c79d-4800-97f7-304bf368e547",
+   "note": "Uniswap V3 USDC/WETH 0.05% - high TVL",
+   "tx": "0x97056e8b78521c74ed3445f3460888ba4f6c00182059da43407430d2a4dfe1ad",
+   "seconds": 19,
+   "rows": [
+    {
+     "url": "https://eth.blockscout.com/api/v2/addresses/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+     "post": false,
+     "status": 200,
+     "bytes": 731,
+     "head": "{\"block_number_balance_updated_at\":26045494,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":\"0x125e0b641d4a4b08806bf52c0c6757648c9963bcda8681e4f996f09e00d4c2cc\",\"creator_address_hash\":\"0x1F98431c8aD98523631AE4a59f",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 6578,
+     "head": "[{\"base_fee_per_gas\":\"89773774\",\"beacon_deposits_count\":null,\"blob_gas_used\":\"655360\",\"blob_transactions_count\":2,\"burnt_fees\":\"2974445187691676\",\"burnt_fees_percentage\":19.891648460932625,\"difficulty\":\"0\",\"excess_blob_gas\":\"181238920\",\"gas",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/blocks/26045400",
+     "post": false,
+     "status": 200,
+     "bytes": 1291,
+     "head": "{\"base_fee_per_gas\":\"89204225\",\"beacon_deposits_count\":0,\"blob_gas_price\":\"5592874\",\"blob_gas_used\":\"786432\",\"blob_transactions_count\":2,\"burnt_blob_fees\":\"4398415085568\",\"burnt_fees\":\"4734594971698625\",\"burnt_fees_percentage\":24.0209882000",
+     "shape": "dict{base_fee_per_gas,beacon_deposits_count,blob_gas_price,blob_gas_used,blob_transactions_count,burnt_blob_fees,burnt_fees,burnt_fees_percentage,difficulty,excess_blob_gas,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/addresses/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640/token-transfers?block_number=26045400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 145852,
+     "head": "{\"items\":[{\"block_hash\":\"0xb4a51797c8529551aa453d592affacd5022bbb240d7291e90b08145cdbd2a167\",\"block_number\":26045398,\"from\":{\"ens_domain_name\":null,\"hash\":\"0x4313C378Cc91eA583C91387B9216e2c03096b27f\",\"implementations\":[{\"address_hash\":\"0x97",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/transactions/0x125e0b641d4a4b08806bf52c0c6757648c9963bcda8681e4f996f09e00d4c2cc",
+     "post": false,
+     "status": 200,
+     "bytes": 48300,
+     "head": "{\"priority_fee\":null,\"raw_input\":\"0xac9650d80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000600000",
+     "shape": "dict{authorization_list,base_fee_per_gas,block_number,confirmation_duration,confirmations,created_contract,decoded_input,exchange_rate,fee,fhe_operations_count,from,gas_limit,gas_price,gas_used,has_error_in_internal_transactions,hash,historic_exchange_rate,is_pending_update,max_fee_per_gas,max_priority_fee_per_gas,method,nonce,position,priority_fee,raw_input,result,revert_reason,status,timestamp,to,token_transfers,token_transfers_overflow,transaction_burnt_fee,transaction_tag,transaction_types,type,value}"
+    },
+    {
+     "url": "https://ethereum-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 75,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 200,
+     "bytes": 89,
+     "head": "{\"jsonrpc\":\"2.0\",\"error\": {\"code\":3,\"data\":\"0x\",\"message\":\"execution reverted\"},\"id\": 1}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=665dc8bc-c79d-4800-97f7-304bf368e547",
+     "post": false,
+     "status": 200,
+     "bytes": 1163,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"665dc8bc-c79d-4800-97f7-304bf368e547\",\"timestamp\":\"2026-09-24T05:03:45.268Z\",\"project\":\"uniswap-v3\",\"chain\":\"Ethereum\",\"symbol\":\"USDC-WETH\",\"poolMeta\":\"0.05%\",\"underlyingTokens\":[\"0xa0b86991c6218b36c1d19",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/665dc8bc-c79d-4800-97f7-304bf368e547",
+     "post": false,
+     "status": 200,
+     "bytes": 266254,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2022-03-27T00:00:00.000Z\",\"tvlUsd\":322105482,\"apy\":26.39449,\"apyBase\":26.39449,\"apyReward\":null,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2022-03-28T00:00:00.000Z\",\"tvlUsd\":32",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "ethereum",
+   "address": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+   "llama": "25171c4c-1877-449a-9f88-45a9f153ee31",
+   "note": "Curve 3pool DAI/USDC/USDT - stable, high TVL",
+   "tx": "0x32d4bc880f3c4a823bb56159c46a54ba8a6ae392b328d19969f9f8ee40de754c",
+   "seconds": 18,
+   "rows": [
+    {
+     "url": "https://eth.blockscout.com/api/v2/addresses/0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+     "post": false,
+     "status": 200,
+     "bytes": 725,
+     "head": "{\"block_number_balance_updated_at\":26045495,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":\"0x20793bbf260912aae189d5d261ff003c9b9166da8191d8f9d63ff1c7722f3ac6\",\"creator_address_hash\":\"0xbabe61887f1de2713c6f97e567",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 6331,
+     "head": "[{\"base_fee_per_gas\":\"81289842\",\"beacon_deposits_count\":null,\"blob_gas_used\":\"131072\",\"blob_transactions_count\":1,\"burnt_fees\":\"1797814030786674\",\"burnt_fees_percentage\":29.79787417773726,\"difficulty\":\"0\",\"excess_blob_gas\":\"181763207\",\"gas_",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/blocks/26045400",
+     "post": false,
+     "status": 200,
+     "bytes": 1291,
+     "head": "{\"base_fee_per_gas\":\"89204225\",\"beacon_deposits_count\":0,\"blob_gas_price\":\"5592874\",\"blob_gas_used\":\"786432\",\"blob_transactions_count\":2,\"burnt_blob_fees\":\"4398415085568\",\"burnt_fees\":\"4734594971698625\",\"burnt_fees_percentage\":24.0209882000",
+     "shape": "dict{base_fee_per_gas,beacon_deposits_count,blob_gas_price,blob_gas_used,blob_transactions_count,burnt_blob_fees,burnt_fees,burnt_fees_percentage,difficulty,excess_blob_gas,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/addresses/0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7/token-transfers?block_number=26045400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 122833,
+     "head": "{\"items\":[{\"block_hash\":\"0x5c52e432ad5c753b3877d93ae7627753e039c2a0d460075cf5b6fb141a6cb15a\",\"block_number\":26045303,\"from\":{\"ens_domain_name\":null,\"hash\":\"0xbEbc44782C7dB0a1A60Cb6fe97d0b483032FF1C7\",\"implementations\":[],\"is_contract\":true,",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/v2/transactions/0x20793bbf260912aae189d5d261ff003c9b9166da8191d8f9d63ff1c7722f3ac6",
+     "post": false,
+     "status": 200,
+     "bytes": 46566,
+     "head": "{\"priority_fee\":null,\"raw_input\":\"0x740100000000000000000000000000000000000000006020526f7fffffffffffffffffffffffffffffff6040527fffffffffffffffffffffffffffffffff8000000000000000000000000000000060605274012a05f1fffffffffffffffffffffffffdabf41c",
+     "shape": "dict{authorization_list,base_fee_per_gas,block_number,confirmation_duration,confirmations,created_contract,decoded_input,exchange_rate,fee,fhe_operations_count,from,gas_limit,gas_price,gas_used,has_error_in_internal_transactions,hash,historic_exchange_rate,is_pending_update,max_fee_per_gas,max_priority_fee_per_gas,method,nonce,position,priority_fee,raw_input,result,revert_reason,status,timestamp,to,token_transfers,token_transfers_overflow,transaction_burnt_fee,transaction_tag,transaction_types,type,value}"
+    },
+    {
+     "url": "https://ethereum-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 103,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":\"0x000000000000000000000000ecb456ea5365865ebab8a2661b0c503410e9b347\"}\n",
+     "shape": "dict{id,jsonrpc,result}"
+    },
+    {
+     "url": "https://eth.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 200,
+     "bytes": 105,
+     "head": "{\"jsonrpc\":\"2.0\",\"result\": \"0x000000000000000000000000ecb456ea5365865ebab8a2661b0c503410e9b347\",\"id\": 1}\n",
+     "shape": "dict{id,jsonrpc,result}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=25171c4c-1877-449a-9f88-45a9f153ee31",
+     "post": false,
+     "status": 200,
+     "bytes": 1061,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"25171c4c-1877-449a-9f88-45a9f153ee31\",\"timestamp\":\"2026-09-24T05:01:21.953Z\",\"project\":\"curve-dex\",\"chain\":\"Ethereum\",\"symbol\":\"DAI-USDC-USDT\",\"poolMeta\":null,\"underlyingTokens\":[\"0x6B175474E89094C44Da98",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/25171c4c-1877-449a-9f88-45a9f153ee31",
+     "post": false,
+     "status": 200,
+     "bytes": 265980,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2022-02-11T00:00:00.000Z\",\"tvlUsd\":4167240293,\"apy\":0.88,\"apyBase\":null,\"apyReward\":null,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2022-02-12T00:00:00.000Z\",\"tvlUsd\":418676977",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "arbitrum",
+   "address": "0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba",
+   "llama": "22a4a964-ea4c-4c5e-bdbf-c43342f61f3b",
+   "note": "Camelot V3 PEAR/USDC - smaller Arbitrum pool",
+   "tx": "0x62ae3b0ae14627ec0a1dfb2f8a243506476e77a976d7094e523d3eb64fe39b7a",
+   "seconds": 205,
+   "rows": [
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/addresses/0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba",
+     "post": false,
+     "status": 200,
+     "bytes": 730,
+     "head": "{\"block_number_balance_updated_at\":507912820,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":\"0x59ffb36f03f95084644bc9eff5e0469321b333df4f02350963ded9e5a9d421a9\",\"creator_address_hash\":\"0x6Dd3FB9653B10e806650F107C",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 4105,
+     "head": "[{\"base_fee_per_gas\":\"20006000\",\"burnt_fees\":\"5354465858000\",\"burnt_fees_percentage\":100.0,\"difficulty\":\"1\",\"gas_limit\":\"1125899906842624\",\"gas_target_percentage\":-99.99999995245706,\"gas_used\":\"267643\",\"gas_used_percentage\":2.37714736783800",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/blocks/507902400",
+     "post": false,
+     "status": 200,
+     "bytes": 1519,
+     "head": "{\"arbitrum\":{\"batch_data_container\":\"in_blob4844\",\"batch_number\":1341830,\"commitment_transaction\":{\"hash\":\"0x4678c132e84fecfdeadb62b9a3533870aae42f65a11010a8b8c9ec1148392874\",\"status\":\"finalized\",\"timestamp\":\"2026-09-22T20:57:59.000000Z\"},\"",
+     "shape": "dict{arbitrum,base_fee_per_gas,burnt_fees,burnt_fees_percentage,difficulty,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/addresses/0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba/token-transfers?block_number=507902400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 116433,
+     "head": "{\"items\":[{\"block_hash\":\"0x5c74b5d2a662bcda5573b8a2be310496e4edfd658cca725c487aff31483c8143\",\"block_number\":507902249,\"from\":{\"ens_domain_name\":null,\"hash\":\"0x299c7D6f2Ef82CB52B2AB83b14f05C6B2b803ABa\",\"implementations\":[],\"is_contract\":true",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/transactions/0x59ffb36f03f95084644bc9eff5e0469321b333df4f02350963ded9e5a9d421a9",
+     "post": false,
+     "status": 200,
+     "bytes": 38692,
+     "head": "{\"priority_fee\":\"77720320000000\",\"raw_input\":\"0xac9650d80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000",
+     "shape": "dict{arbitrum,authorization_list,base_fee_per_gas,block_number,confirmation_duration,confirmations,created_contract,decoded_input,exchange_rate,fee,fhe_operations_count,from,gas_limit,gas_price,gas_used,has_error_in_internal_transactions,hash,historic_exchange_rate,is_pending_update,max_fee_per_gas,max_priority_fee_per_gas,method,nonce,position,priority_fee,raw_input,result,revert_reason,status,timestamp,to,token_transfers,token_transfers_overflow,transaction_burnt_fee,transaction_tag,transaction_types,type,value}"
+    },
+    {
+     "url": "https://arbitrum-one-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 87,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\",\"data\":\"0x\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 504,
+     "bytes": 31756,
+     "head": "<!DOCTYPE html>\n<html lang=\"en-US\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n    <link rel=\"icon\" type=\"image/png\"",
+     "shape": "not json"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=22a4a964-ea4c-4c5e-bdbf-c43342f61f3b",
+     "post": false,
+     "status": 200,
+     "bytes": 1043,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"22a4a964-ea4c-4c5e-bdbf-c43342f61f3b\",\"timestamp\":\"2026-09-24T06:01:08.409Z\",\"project\":\"camelot-v3\",\"chain\":\"Arbitrum\",\"symbol\":\"PEAR-USDC\",\"poolMeta\":null,\"underlyingTokens\":[\"0x3212dc0f8c834e4de893532d",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/22a4a964-ea4c-4c5e-bdbf-c43342f61f3b",
+     "post": false,
+     "status": 200,
+     "bytes": 116406,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2024-09-27T23:01:44.640Z\",\"tvlUsd\":685844,\"apy\":0,\"apyBase\":0,\"apyReward\":null,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2024-09-28T23:02:24.522Z\",\"tvlUsd\":646952,\"apy\":0,\"apy",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "arbitrum",
+   "address": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+   "llama": "af3cd3a9-a9b8-483e-82c6-bf4fceb66584",
+   "note": "Uniswap V3 WBTC/USDT - mid Arbitrum pool",
+   "tx": "0x077b0e0271d93c43c5ee2f87cefdfa86f81e788ae203c58c7ea554297d3e85bf",
+   "seconds": 21,
+   "rows": [
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/addresses/0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+     "post": false,
+     "status": 200,
+     "bytes": 628,
+     "head": "{\"block_number_balance_updated_at\":507912746,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":null,\"creator_address_hash\":null,\"ens_domain_name\":null,\"exchange_rate\":\"2687.86\",\"has_beacon_chain_withdrawals\":false,\"",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 4105,
+     "head": "[{\"base_fee_per_gas\":\"20006000\",\"burnt_fees\":\"5354465858000\",\"burnt_fees_percentage\":100.0,\"difficulty\":\"1\",\"gas_limit\":\"1125899906842624\",\"gas_target_percentage\":-99.99999995245706,\"gas_used\":\"267643\",\"gas_used_percentage\":2.37714736783800",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/blocks/507902400",
+     "post": false,
+     "status": 200,
+     "bytes": 1519,
+     "head": "{\"arbitrum\":{\"batch_data_container\":\"in_blob4844\",\"batch_number\":1341830,\"commitment_transaction\":{\"hash\":\"0x4678c132e84fecfdeadb62b9a3533870aae42f65a11010a8b8c9ec1148392874\",\"status\":\"finalized\",\"timestamp\":\"2026-09-22T20:57:59.000000Z\"},\"",
+     "shape": "dict{arbitrum,base_fee_per_gas,burnt_fees,burnt_fees_percentage,difficulty,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/v2/addresses/0x5969efdde3cf5c0d9a88ae51e47d721096a97203/token-transfers?block_number=507902400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 95470,
+     "head": "{\"items\":[{\"block_hash\":\"0x31dca77b06267841d19d07e9ca408e490d3627686b791f1e46c7587e383ac3af\",\"block_number\":507902150,\"from\":{\"ens_domain_name\":null,\"hash\":\"0x96DaA0B8a5499EA9323421ED0Cda06B345caab73\",\"implementations\":[],\"is_contract\":true",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://arbitrum-one-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 87,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\",\"data\":\"0x\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://arbitrum.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 429,
+     "bytes": 109,
+     "head": "{\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}",
+     "shape": "dict{message,result,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=af3cd3a9-a9b8-483e-82c6-bf4fceb66584",
+     "post": false,
+     "status": 200,
+     "bytes": 1166,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"af3cd3a9-a9b8-483e-82c6-bf4fceb66584\",\"timestamp\":\"2026-09-24T06:02:40.052Z\",\"project\":\"uniswap-v3\",\"chain\":\"Arbitrum\",\"symbol\":\"WBTC-USDT\",\"poolMeta\":\"0.05%\",\"underlyingTokens\":[\"0x2f2a2543b76a4166549f7",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/af3cd3a9-a9b8-483e-82c6-bf4fceb66584",
+     "post": false,
+     "status": 200,
+     "bytes": 163605,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2023-03-30T23:28:27.357Z\",\"tvlUsd\":22712,\"apy\":8.2398,\"apyBase\":8.2398,\"apyReward\":null,\"il7d\":-0.02279,\"apyBase7d\":1.44112,\"pricePerShare\":null},{\"timestamp\":\"2023-03-31T22:07:01.089Z\",\"tvlUsd\":229",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "base",
+   "address": "0xe03cce449932219fc0ca28f3a4f784ce55de0c4e",
+   "llama": "f7583a03-2f3b-5b32-b87f-f9a9b343af29",
+   "note": "Uniswap V3 W0G/USDC - days-old Base pool",
+   "tx": "0x549ae859a5c702205b980bf1b8445b7cb29dcdcdcc924e964aba69e74e41479a",
+   "seconds": 12,
+   "rows": [
+    {
+     "url": "https://base.blockscout.com/api/v2/addresses/0xe03cce449932219fc0ca28f3a4f784ce55de0c4e",
+     "post": false,
+     "status": 200,
+     "bytes": 626,
+     "head": "{\"block_number_balance_updated_at\":51720554,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":null,\"creator_address_hash\":null,\"ens_domain_name\":null,\"exchange_rate\":\"2687.1\",\"has_beacon_chain_withdrawals\":false,\"ha",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 6666,
+     "head": "[{\"base_fee_per_gas\":\"5000000\",\"burnt_fees\":\"121584945000000\",\"burnt_fees_percentage\":67.64198543480546,\"difficulty\":\"0\",\"gas_limit\":\"400000000\",\"gas_target_percentage\":-69.60376375,\"gas_used\":\"24316989\",\"gas_used_percentage\":6.07924725,\"ha",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/blocks/51719400",
+     "post": false,
+     "status": 200,
+     "bytes": 2615,
+     "head": "{\"base_fee_per_gas\":\"5000000\",\"burnt_fees\":\"172399020000000\",\"burnt_fees_percentage\":68.31445815892427,\"difficulty\":\"0\",\"gas_limit\":\"400000000\",\"gas_target_percentage\":-56.900245,\"gas_used\":\"34479804\",\"gas_used_percentage\":8.619951,\"hash\":\"",
+     "shape": "dict{base_fee_per_gas,burnt_fees,burnt_fees_percentage,difficulty,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,optimism,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/addresses/0xe03cce449932219fc0ca28f3a4f784ce55de0c4e/token-transfers?block_number=51719400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 82159,
+     "head": "{\"items\":[{\"block_hash\":\"0x157f1c606590f8c88273390ccbd00c9bca3dcdd08bbc62790eccec0fcd0ffe41\",\"block_number\":51718094,\"from\":{\"ens_domain_name\":null,\"hash\":\"0x31483830DF330aa2dB1C2af7E687E2BaE678aac3\",\"implementations\":[{\"address_hash\":\"0x63",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://base-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 75,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 429,
+     "bytes": 109,
+     "head": "{\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}",
+     "shape": "dict{message,result,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=f7583a03-2f3b-5b32-b87f-f9a9b343af29",
+     "post": false,
+     "status": 200,
+     "bytes": 1121,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"f7583a03-2f3b-5b32-b87f-f9a9b343af29\",\"timestamp\":\"2026-09-24T06:02:40.052Z\",\"project\":\"uniswap-v3\",\"chain\":\"Base\",\"symbol\":\"W0G-USDC\",\"poolMeta\":\"0.3%\",\"underlyingTokens\":[\"0x23cd099eb438cca50349ee2bc80",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/f7583a03-2f3b-5b32-b87f-f9a9b343af29",
+     "post": false,
+     "status": 200,
+     "bytes": 497,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2026-09-22T22:03:01.116Z\",\"tvlUsd\":206181,\"apy\":4.14793,\"apyBase\":4.14793,\"apyReward\":null,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2026-09-23T23:03:43.815Z\",\"tvlUsd\":209596,",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "base",
+   "address": "0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b",
+   "llama": "ec8b7fe5-f720-5f7d-b967-77231996fe45",
+   "note": "Uniswap V2 WETH/BELONG - new, unverified Base pair",
+   "tx": "0x02aa4f8898a736291ca4113c0dc7c9c62c44420dc0d1d3b643cfa10020313e1e",
+   "seconds": 10,
+   "rows": [
+    {
+     "url": "https://base.blockscout.com/api/v2/addresses/0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b",
+     "post": false,
+     "status": 200,
+     "bytes": 1020,
+     "head": "{\"block_number_balance_updated_at\":51720554,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":null,\"creator_address_hash\":null,\"ens_domain_name\":null,\"exchange_rate\":\"2686.74\",\"has_beacon_chain_withdrawals\":false,\"h",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 6678,
+     "head": "[{\"base_fee_per_gas\":\"5000000\",\"burnt_fees\":\"125042805000000\",\"burnt_fees_percentage\":68.74066144849236,\"difficulty\":\"0\",\"gas_limit\":\"400000000\",\"gas_target_percentage\":-68.73929875,\"gas_used\":\"25008561\",\"gas_used_percentage\":6.25214025,\"ha",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/blocks/51719400",
+     "post": false,
+     "status": 200,
+     "bytes": 2615,
+     "head": "{\"base_fee_per_gas\":\"5000000\",\"burnt_fees\":\"172399020000000\",\"burnt_fees_percentage\":68.31445815892427,\"difficulty\":\"0\",\"gas_limit\":\"400000000\",\"gas_target_percentage\":-56.900245,\"gas_used\":\"34479804\",\"gas_used_percentage\":8.619951,\"hash\":\"",
+     "shape": "dict{base_fee_per_gas,burnt_fees,burnt_fees_percentage,difficulty,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,optimism,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/addresses/0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b/token-transfers?block_number=51719400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 71972,
+     "head": "{\"items\":[{\"block_hash\":\"0x55deb751612d5760dd42f82fcf80e487fccbd1c61e5d0165697e573905cc1946\",\"block_number\":51719339,\"from\":{\"ens_domain_name\":null,\"hash\":\"0xDd0C3e440af8678F6F03a9b9c5daa01282C3905b\",\"implementations\":[],\"is_contract\":true,",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://base-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 75,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 429,
+     "bytes": 109,
+     "head": "{\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}",
+     "shape": "dict{message,result,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=ec8b7fe5-f720-5f7d-b967-77231996fe45",
+     "post": false,
+     "status": 200,
+     "bytes": 1106,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"ec8b7fe5-f720-5f7d-b967-77231996fe45\",\"timestamp\":\"2026-09-24T06:02:01.460Z\",\"project\":\"uniswap-v2\",\"chain\":\"Base\",\"symbol\":\"WETH-BELONG\",\"poolMeta\":null,\"underlyingTokens\":[\"0x42000000000000000000000000",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/ec8b7fe5-f720-5f7d-b967-77231996fe45",
+     "post": false,
+     "status": 200,
+     "bytes": 349,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2026-09-23T23:01:35.892Z\",\"tvlUsd\":267670,\"apy\":221.88714,\"apyBase\":221.88714,\"apyReward\":null,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2026-09-24T06:02:01.460Z\",\"tvlUsd\":245",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "base",
+   "address": "0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb",
+   "llama": "eb27d0be-9de4-4ed9-8d36-a754e18d3358",
+   "note": "Aerodrome Slipstream AVNT/USDC - extreme APY",
+   "tx": "0x8bd597ee9902110243381153511c7a8b33dfb781c5a96b92a12560079208b5d3",
+   "seconds": 12,
+   "rows": [
+    {
+     "url": "https://base.blockscout.com/api/v2/addresses/0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb",
+     "post": false,
+     "status": 200,
+     "bytes": 802,
+     "head": "{\"block_number_balance_updated_at\":51720534,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":\"0xc5fb05ed74a318c6f5d347760dfc8011fca5138d6914959938efe573ecae6b6d\",\"creator_address_hash\":\"0x5e7BB104d84c7CB9B682AaC2F3",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 6665,
+     "head": "[{\"base_fee_per_gas\":\"5000000\",\"burnt_fees\":\"105345540000000\",\"burnt_fees_percentage\":63.568878135574984,\"difficulty\":\"0\",\"gas_limit\":\"400000000\",\"gas_target_percentage\":-73.663615,\"gas_used\":\"21069108\",\"gas_used_percentage\":5.267277,\"hash\"",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/blocks/51719400",
+     "post": false,
+     "status": 200,
+     "bytes": 2615,
+     "head": "{\"base_fee_per_gas\":\"5000000\",\"burnt_fees\":\"172399020000000\",\"burnt_fees_percentage\":68.31445815892427,\"difficulty\":\"0\",\"gas_limit\":\"400000000\",\"gas_target_percentage\":-56.900245,\"gas_used\":\"34479804\",\"gas_used_percentage\":8.619951,\"hash\":\"",
+     "shape": "dict{base_fee_per_gas,burnt_fees,burnt_fees_percentage,difficulty,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,optimism,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/addresses/0xe30d5bf485f7476ac15884a28ffb3c9cea635dcb/token-transfers?block_number=51719400&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 95770,
+     "head": "{\"items\":[{\"block_hash\":\"0x2bc4d860aee4c6eda47a4492b079cc10deba3a54ae0211cc5b2f887a4b487059\",\"block_number\":51719248,\"from\":{\"ens_domain_name\":null,\"hash\":\"0x8F10B468b06c6FD214B65F87778827F7D113f996\",\"implementations\":[],\"is_contract\":true,",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/v2/transactions/0xc5fb05ed74a318c6f5d347760dfc8011fca5138d6914959938efe573ecae6b6d",
+     "post": false,
+     "status": 200,
+     "bytes": 29002,
+     "head": "{\"l1_gas_used\":\"6224\",\"priority_fee\":\"922645287837\",\"raw_input\":\"0x6a761202000000000000000000000000827922686190790b37229fd06084350e74485b7200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+     "shape": "dict{authorization_list,base_fee_per_gas,block_number,confirmation_duration,confirmations,created_contract,decoded_input,exchange_rate,fee,fhe_operations_count,from,gas_limit,gas_price,gas_used,has_error_in_internal_transactions,hash,historic_exchange_rate,is_pending_update,l1_fee,l1_fee_scalar,l1_gas_price,l1_gas_used,max_fee_per_gas,max_priority_fee_per_gas,method,nonce,op_withdrawals,position,priority_fee,raw_input,result,revert_reason,status,timestamp,to,token_transfers,token_transfers_overflow,transaction_burnt_fee,transaction_tag,transaction_types}"
+    },
+    {
+     "url": "https://base-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 75,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://base.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 429,
+     "bytes": 109,
+     "head": "{\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}",
+     "shape": "dict{message,result,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=eb27d0be-9de4-4ed9-8d36-a754e18d3358",
+     "post": false,
+     "status": 200,
+     "bytes": 1243,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"eb27d0be-9de4-4ed9-8d36-a754e18d3358\",\"timestamp\":\"2026-09-24T06:07:05.593Z\",\"project\":\"aerodrome-slipstream\",\"chain\":\"Base\",\"symbol\":\"AVNT-USDC\",\"poolMeta\":\"CL1 - 0.27%\",\"underlyingTokens\":[\"0x696F9436B",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/eb27d0be-9de4-4ed9-8d36-a754e18d3358",
+     "post": false,
+     "status": 200,
+     "bytes": 63874,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2025-09-09T23:06:28.718Z\",\"tvlUsd\":1047481,\"apy\":111.48317,\"apyBase\":111.48317,\"apyReward\":0,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2025-09-10T23:06:21.233Z\",\"tvlUsd\":12225",
+     "shape": "dict{data,status}"
+    }
+   ]
+  },
+  {
+   "chain": "polygon",
+   "address": "0x853ee4b2a13f8a742d64c8f088be7ba2131f670d",
+   "llama": "f8adcdd5-71d2-4460-956e-7ccdd53b16fa",
+   "note": "QuickSwap USDC/WETH - Polygon",
+   "tx": "0xca9494299dabd9546f664e4f27b55bd2bacd7f2bdfa0fe7a199cbe33b30e92e3",
+   "seconds": 12,
+   "rows": [
+    {
+     "url": "https://polygon.blockscout.com/api/v2/addresses/0x853ee4b2a13f8a742d64c8f088be7ba2131f670d",
+     "post": false,
+     "status": 200,
+     "bytes": 942,
+     "head": "{\"block_number_balance_updated_at\":94349728,\"coin_balance\":\"0\",\"creation_status\":\"success\",\"creation_transaction_hash\":null,\"creator_address_hash\":null,\"ens_domain_name\":null,\"exchange_rate\":\"0.102664\",\"has_beacon_chain_withdrawals\":false,\"",
+     "shape": "dict{block_number_balance_updated_at,coin_balance,creation_status,creation_transaction_hash,creator_address_hash,ens_domain_name,exchange_rate,has_beacon_chain_withdrawals,has_logs,has_token_transfers,has_tokens,has_validated_blocks,hash,implementations,is_contract,is_scam,is_verified,metadata,name,private_tags,proxy_type,public_tags,reputation,token,watchlist_address_id,watchlist_names}"
+    },
+    {
+     "url": "https://polygon.blockscout.com/api/v2/main-page/blocks",
+     "post": false,
+     "status": 200,
+     "bytes": 7387,
+     "head": "[{\"base_fee_per_gas\":\"242106603490\",\"burnt_fees\":\"7977089856893047830\",\"burnt_fees_percentage\":73.52037686760198,\"difficulty\":\"1\",\"gas_limit\":\"160000000\",\"gas_target_percentage\":-58.81416625,\"gas_used\":\"32948667\",\"gas_used_percentage\":20.59",
+     "shape": "list[4]"
+    },
+    {
+     "url": "https://polygon.blockscout.com/api/v2/blocks/94348800",
+     "post": false,
+     "status": 200,
+     "bytes": 1041,
+     "head": "{\"base_fee_per_gas\":\"239457138057\",\"burnt_fees\":\"3466120522232649870\",\"burnt_fees_percentage\":30.74755366633769,\"difficulty\":\"1\",\"gas_limit\":\"160000000\",\"gas_target_percentage\":-81.9063625,\"gas_used\":\"14474910\",\"gas_used_percentage\":9.04681",
+     "shape": "dict{base_fee_per_gas,burnt_fees,burnt_fees_percentage,difficulty,gas_limit,gas_target_percentage,gas_used,gas_used_percentage,hash,height,internal_transactions_count,is_pending_update,miner,nonce,parent_hash,priority_fee,rewards,size,timestamp,total_difficulty,transaction_fees,transactions_count,type,uncles_hashes,withdrawals_count}"
+    },
+    {
+     "url": "https://polygon.blockscout.com/api/v2/addresses/0x853ee4b2a13f8a742d64c8f088be7ba2131f670d/token-transfers?block_number=94348800&index=0",
+     "post": false,
+     "status": 200,
+     "bytes": 98558,
+     "head": "{\"items\":[{\"block_hash\":\"0xf912e42691cbf69fed936592b571e407079a227a11abc4edaac370e40b654f69\",\"block_number\":94347779,\"from\":{\"ens_domain_name\":null,\"hash\":\"0x853Ee4b2A13f8a742d64C8F088bE7bA2131f670d\",\"implementations\":[],\"is_contract\":true,",
+     "shape": "dict{items,next_page_params}"
+    },
+    {
+     "url": "https://polygon-bor-rpc.publicnode.com",
+     "post": true,
+     "status": 200,
+     "bytes": 87,
+     "head": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":3,\"message\":\"execution reverted\",\"data\":\"0x\"}}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://polygon.blockscout.com/api/eth-rpc",
+     "post": true,
+     "status": 200,
+     "bytes": 89,
+     "head": "{\"jsonrpc\":\"2.0\",\"error\": {\"code\":3,\"data\":\"0x\",\"message\":\"execution reverted\"},\"id\": 1}\n",
+     "shape": "dict{error,id,jsonrpc}"
+    },
+    {
+     "url": "https://yields.llama.fi/poolsEnriched?pool=f8adcdd5-71d2-4460-956e-7ccdd53b16fa",
+     "post": false,
+     "status": 200,
+     "bytes": 1000,
+     "head": "{\"status\":\"success\",\"data\":[{\"pool\":\"f8adcdd5-71d2-4460-956e-7ccdd53b16fa\",\"timestamp\":\"2026-09-24T06:01:44.446Z\",\"project\":\"quickswap-dex\",\"chain\":\"Polygon\",\"symbol\":\"USDC-WETH\",\"poolMeta\":null,\"underlyingTokens\":[\"0x2791bca1f2de4661ed88a3",
+     "shape": "dict{data,status}"
+    },
+    {
+     "url": "https://yields.llama.fi/chart/f8adcdd5-71d2-4460-956e-7ccdd53b16fa",
+     "post": false,
+     "status": 200,
+     "bytes": 207236,
+     "head": "{\"status\":\"success\",\"data\":[{\"timestamp\":\"2022-02-11T00:00:00.000Z\",\"tvlUsd\":58089525,\"apy\":18.15,\"apyBase\":18.15,\"apyReward\":null,\"il7d\":null,\"apyBase7d\":null,\"pricePerShare\":null},{\"timestamp\":\"2022-02-12T00:00:00.000Z\",\"tvlUsd\":58019460,",
+     "shape": "dict{data,status}"
+    }
+   ]
+  }
+ ]
+}

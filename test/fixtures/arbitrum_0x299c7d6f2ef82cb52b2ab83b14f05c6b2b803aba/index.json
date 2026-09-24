@@ -1,0 +1,100 @@
+{
+ "now": 1790230454,
+ "facts": {
+  "pool_id": 0,
+  "pool_address": "0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba",
+  "chain": "arbitrum",
+  "llama_id": "22a4a964-ea4c-4c5e-bdbf-c43342f61f3b",
+  "now": 1790230454
+ },
+ "fetches": [
+  {
+   "file": "00.json",
+   "method": "GET",
+   "url": "https://arbitrum.blockscout.com/api/v2/addresses/0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "01.json",
+   "method": "GET",
+   "url": "https://arbitrum.blockscout.com/api/v2/main-page/blocks",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "02.json",
+   "method": "GET",
+   "url": "https://arbitrum.blockscout.com/api/v2/blocks/507902400",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "03.json",
+   "method": "GET",
+   "url": "https://arbitrum.blockscout.com/api/v2/addresses/0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba/token-transfers?block_number=507902400&index=0",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "04.json",
+   "method": "GET",
+   "url": "https://arbitrum.blockscout.com/api/v2/transactions/0x59ffb36f03f95084644bc9eff5e0469321b333df4f02350963ded9e5a9d421a9",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "05.json",
+   "method": "POST",
+   "url": "https://arbitrum-one-rpc.publicnode.com",
+   "body": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_call\", \"params\": [{\"to\": \"0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba\", \"data\": \"0x8da5cb5b\"}, \"latest\"]}",
+   "status": 200
+  },
+  {
+   "file": "06.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/poolsEnriched?pool=22a4a964-ea4c-4c5e-bdbf-c43342f61f3b",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "07.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/chart/22a4a964-ea4c-4c5e-bdbf-c43342f61f3b",
+   "body": "",
+   "status": 200
+  }
+ ],
+ "expected_ev": {
+  "bs_state": "OK",
+  "contract_name": "AlgebraPool",
+  "owner_state": "NONE",
+  "top_csv": "0x58095979b412a366687ca05cbe85ff56241be21f:17:EU:|0x111116053f09d34a7eae8102887004445176ca11:13:CU:|0x111111125421ca6dc452d289314280a0f8842a65:12:CV:Aggregation Router V6|0xf1afd3bbeefe61042b2b29f42d65f71ac5bc881e:6:CV:EisenDiamond|0xdbcd6d6e3e6ff51648ca73d4274cafd34d22a679:2:CV:ArbitrumSettler",
+  "window_hash": "c2c7e413293b5800",
+  "ll_state": "OK",
+  "project": "camelot-v3",
+  "symbol": "PEAR-USDC",
+  "exposure": "multi",
+  "il_risk": "yes",
+  "snap_day": "2026-09-23",
+  "created_ts": 1727355103,
+  "window_block": 507902400,
+  "window_end_ts": 1790110545,
+  "window_n": 50,
+  "window_tx": 17,
+  "window_unique": 5,
+  "top_legs": 17,
+  "window_oldest_ts": 1790109251,
+  "window_newest_ts": 1790110507,
+  "tvl_usd": 1164647,
+  "tvl_7d_usd": 786038,
+  "apy_cp": 3693,
+  "apy_mean30_cp": 1865,
+  "history_days": 727,
+  "llama_first_ts": 1727478104,
+  "verified": true,
+  "proxy": false,
+  "top_is_contract": false,
+  "stablecoin": false
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "now": 1790230465,
+ "facts": {
+  "pool_id": 0,
+  "pool_address": "0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b",
+  "chain": "base",
+  "llama_id": "ec8b7fe5-f720-5f7d-b967-77231996fe45",
+  "now": 1790230465
+ },
+ "fetches": [
+  {
+   "file": "00.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/addresses/0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "01.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/main-page/blocks",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "02.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/blocks/51719400",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "03.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/addresses/0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b/token-transfers?block_number=51719400&index=0",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "04.json",
+   "method": "POST",
+   "url": "https://base-rpc.publicnode.com",
+   "body": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_call\", \"params\": [{\"to\": \"0xdd0c3e440af8678f6f03a9b9c5daa01282c3905b\", \"data\": \"0x8da5cb5b\"}, \"latest\"]}",
+   "status": 200
+  },
+  {
+   "file": "05.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/poolsEnriched?pool=ec8b7fe5-f720-5f7d-b967-77231996fe45",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "06.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/chart/ec8b7fe5-f720-5f7d-b967-77231996fe45",
+   "body": "",
+   "status": 200
+  }
+ ],
+ "expected_ev": {
+  "bs_state": "OK",
+  "contract_name": "Uniswap V2",
+  "owner_state": "NONE",
+  "top_csv": "0x6ccced19590d2fe1a24b265d26bac0bb206b24f7:12:CU:|0x157b4eaabde8b983a590d15615c9b74e84331f01:3:EU:|0x1e397571499210a38efcb003ad3148cf9f56f484:3:EU:|0x2ed54fb9a0fc147d5f941cd28a21fe8f25400f40:3:EU:|0x5982fc60dfb79bb255a52c2110799a978ddbe67b:3:EU:",
+  "window_hash": "ee2ec8f39c34329c",
+  "ll_state": "OK",
+  "project": "uniswap-v2",
+  "symbol": "WETH-BELONG",
+  "exposure": "multi",
+  "il_risk": "yes",
+  "snap_day": "2026-09-23",
+  "created_ts": 0,
+  "window_block": 51719400,
+  "window_end_ts": 1790228147,
+  "window_n": 50,
+  "window_tx": 25,
+  "window_unique": 14,
+  "top_legs": 12,
+  "window_oldest_ts": 1790223591,
+  "window_newest_ts": 1790228025,
+  "tvl_usd": 267670,
+  "tvl_7d_usd": 0,
+  "apy_cp": 22188,
+  "apy_mean30_cp": 22188,
+  "history_days": 1,
+  "llama_first_ts": 1790204495,
+  "verified": false,
+  "proxy": false,
+  "top_is_contract": true,
+  "stablecoin": false
+ }
+}

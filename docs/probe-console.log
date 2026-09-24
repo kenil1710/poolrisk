@@ -1,0 +1,76 @@
+  fee        0.100000 GEN (estimated)
+GenLayer RPC error (eth_getTransactionCount): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … probe deploy attempt 1 hit transient RPC noise, waiting 4s
+GenLayer RPC error (eth_estimateGas): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Gas estimation failed, using default 200_000: UnknownRpcError: An unknown RPC error occurred.
+
+Details: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Version: viem@2.56.8
+    at withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:127:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30) {
+  details: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`,
+  docsPath: undefined,
+  metaMessages: undefined,
+  shortMessage: 'An unknown RPC error occurred.',
+  version: '2.56.8',
+  code: -1,
+  [cause]: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+      at JSON.parse (<anonymous>)
+      at parseJSONFromBytes (node:internal/deps/undici/undici:5880:19)
+      at successSteps (node:internal/deps/undici/undici:5861:27)
+      at fullyReadBody (node:internal/deps/undici/undici:4753:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async consumeBody (node:internal/deps/undici/undici:5870:7)
+      at async Object.request (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/genlayer-js/dist/index.js:5736:22)
+      at async withRetry.delay.count.count (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/buildRequest.js:30:24)
+      at async attemptRetry (file:///Users/kenilvakariya/Desktop/poolrisk/test/node_modules/viem/_esm/utils/promise/withRetry.js:24:30)
+}
+GenLayer RPC error (eth_sendRawTransaction): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … probe deploy attempt 2 hit transient RPC noise, waiting 8s
+  tx         0x9cf51b1cce93071acd08b2026f181fb3819ed7da393d24acf41eceee7b4c807e
+probe at 0x73a930669f3481A4b281997AeD8b7DFe23aBafba
+
+ethereum:0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640  Uniswap V3 USDC/WETH 0.05% - high TVL  (ACCEPTED, 19s, tx 0x97056e8b78521c74ed3445f3460888ba4f6c00182059da43407430d2a4dfe1ad)
+   200      731  https://eth.blockscout.com/api/v2/addresses/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640  dict{block_number_balance_updated_at,coin_balance,creation_s
+   200     6578  https://eth.blockscout.com/api/v2/main-page/blocks  list[4]
+   200     1291  https://eth.blockscout.com/api/v2/blocks/26045400  dict{base_fee_per_gas,beacon_deposits_count,blob_gas_price,b
+   200   145852  https://eth.blockscout.com/api/v2/addresses/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640/token-transfers?block_number=26  dict{items,next_page_params}
+   200    48300  https://eth.blockscout.com/api/v2/transactions/0x125e0b641d4a4b08806bf52c0c6757648c9963bcda8681e4f996f09e00d4c2cc  dict{authorization_list,base_fee_per_gas,block_number,confir
+   200       75  https://ethereum-rpc.publicnode.com [POST]  dict{error,id,jsonrpc}
+   200       89  https://eth.blockscout.com/api/eth-rpc [POST]  dict{error,id,jsonrpc}
+   200     1163  https://yields.llama.fi/poolsEnriched?pool=665dc8bc-c79d-4800-97f7-304bf368e547  dict{data,status}
+   200   266254  https://yields.llama.fi/chart/665dc8bc-c79d-4800-97f7-304bf368e547  dict{data,status}
+
+ethereum:0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7  Curve 3pool DAI/USDC/USDT - stable, high TVL  (ACCEPTED, 18s, tx 0x32d4bc880f3c4a823bb56159c46a54ba8a6ae392b328d19969f9f8ee40de754c)
+   200      725  https://eth.blockscout.com/api/v2/addresses/0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7  dict{block_number_balance_updated_at,coin_balance,creation_s
+   200     6331  https://eth.blockscout.com/api/v2/main-page/blocks  list[4]
+   200     1291  https://eth.blockscout.com/api/v2/blocks/26045400  dict{base_fee_per_gas,beacon_deposits_count,blob_gas_price,b
+   200   122833  https://eth.blockscout.com/api/v2/addresses/0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7/token-transfers?block_number=26  dict{items,next_page_params}
+   200    46566  https://eth.blockscout.com/api/v2/transactions/0x20793bbf260912aae189d5d261ff003c9b9166da8191d8f9d63ff1c7722f3ac6  dict{authorization_list,base_fee_per_gas,block_number,confir
+   200      103  https://ethereum-rpc.publicnode.com [POST]  dict{id,jsonrpc,result}
+   200      105  https://eth.blockscout.com/api/eth-rpc [POST]  dict{id,jsonrpc,result}
+   200     1061  https://yields.llama.fi/poolsEnriched?pool=25171c4c-1877-449a-9f88-45a9f153ee31  dict{data,status}
+   200   265980  https://yields.llama.fi/chart/25171c4c-1877-449a-9f88-45a9f153ee31  dict{data,status}
+GenLayer RPC error (sim_estimateTransactionFees): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … probe fee attempt 1 hit transient RPC noise, waiting 2s
+GenLayer RPC error (sim_estimateTransactionFees): Service temporarily unavailable
+  … write fee simulation failed for probe (Requested resource not available.
+
+Details: Service temporarily unavailable
+Version: viem@2.56.8)
+
+arbitrum:0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba  Camelot V3 PEAR/USDC - smaller Arbitrum pool  (ACCEPTED, 205s, tx 0x62ae3b0ae14627ec0a1dfb2f8a243506476e77a976d7094e523d3eb64fe39b7a)
+   200      730  https://arbitrum.blockscout.com/api/v2/addresses/0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba  dict{block_number_balance_updated_at,coin_balance,creation_s
+   200     4105  https://arbitrum.blockscout.com/api/v2/main-page/blocks  list[4]
+   200     1519  https://arbitrum.blockscout.com/api/v2/blocks/507902400  dict{arbitrum,base_fee_per_gas,burnt_fees,burnt_fees_percent
+   200   116433  https://arbitrum.blockscout.com/api/v2/addresses/0x299c7d6f2ef82cb52b2ab83b14f05c6b2b803aba/token-transfers?block_numb  dict{items,next_page_params}
+   200    38692  https://arbitrum.blockscout.com/api/v2/transactions/0x59ffb36f03f95084644bc9eff5e0469321b333df4f02350963ded9e5a9d421a9  dict{arbitrum,authorization_list,base_fee_per_gas,block_numb
+   200       87  https://arbitrum-one-rpc.publicnode.com [POST]  dict{error,id,jsonrpc}
+   504    31756  https://arbitrum.blockscout.com/api/eth-rpc [POST]  not json
+   200     1043  https://yields.llama.fi/poolsEnriched?pool=22a4a964-ea4c-4c5e-bdbf-c43342f61f3b  dict{data,status}
+   200   116406  https://yields.llama.fi/chart/22a4a964-ea4c-4c5e-bdbf-c43342f61f3b  dict{data,status}
+GenLayer RPC error (sim_estimateTransactionFees): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … probe fee attempt 1 hit transient RPC noise, waiting 2s
+GenLayer RPC error (sim_estimateTransactionFees): Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  … probe fee attempt 2 hit transient RPC noise, waiting 4s

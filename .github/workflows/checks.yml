@@ -1,0 +1,25 @@
+name: checks
+
+# The short loop, on every push: offline suite, rejection audit and GenVM lint.
+# The long loop (test/seed.mjs and test/lifecycle.mjs, real consensus rounds on
+# Studio Dev) is not here; its output is docs/EVIDENCE.md, which is committed.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 test/test_logic.py
+      - run: python3 tools/audit.py
+      - run: |
+          python3 -m pip install --quiet genvm-linter
+          genvm-lint lint contracts/PoolRisk.py

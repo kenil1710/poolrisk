@@ -1,0 +1,93 @@
+{
+ "now": 1790230463,
+ "facts": {
+  "pool_id": 0,
+  "pool_address": "0xe03cce449932219fc0ca28f3a4f784ce55de0c4e",
+  "chain": "base",
+  "llama_id": "f7583a03-2f3b-5b32-b87f-f9a9b343af29",
+  "now": 1790230463
+ },
+ "fetches": [
+  {
+   "file": "00.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/addresses/0xe03cce449932219fc0ca28f3a4f784ce55de0c4e",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "01.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/main-page/blocks",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "02.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/blocks/51719400",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "03.json",
+   "method": "GET",
+   "url": "https://base.blockscout.com/api/v2/addresses/0xe03cce449932219fc0ca28f3a4f784ce55de0c4e/token-transfers?block_number=51719400&index=0",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "04.json",
+   "method": "POST",
+   "url": "https://base-rpc.publicnode.com",
+   "body": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_call\", \"params\": [{\"to\": \"0xe03cce449932219fc0ca28f3a4f784ce55de0c4e\", \"data\": \"0x8da5cb5b\"}, \"latest\"]}",
+   "status": 200
+  },
+  {
+   "file": "05.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/poolsEnriched?pool=f7583a03-2f3b-5b32-b87f-f9a9b343af29",
+   "body": "",
+   "status": 200
+  },
+  {
+   "file": "06.json",
+   "method": "GET",
+   "url": "https://yields.llama.fi/chart/f7583a03-2f3b-5b32-b87f-f9a9b343af29",
+   "body": "",
+   "status": 200
+  }
+ ],
+ "expected_ev": {
+  "bs_state": "OK",
+  "contract_name": "UniswapV3Pool",
+  "owner_state": "NONE",
+  "top_csv": "0x31483830df330aa2db1c2af7e687e2bae678aac3:12:CV:|0xe0c8342d2fd722fa01b39fd29998fc725f64229d:10:EU:|0x4f6f91599858bf0d19fabcf2c5d591fe13f7c059:9:CV:BaseSettler|0x9bd25e67bf390437c8faf480ac735a27bcf6168c:6:CV:TokenJar|0xfcf31a76f771547f751753f44014433952dfd7f8:2:CV:ERC1967Proxy",
+  "window_hash": "557f2da6c780fcfd",
+  "ll_state": "OK",
+  "project": "uniswap-v3",
+  "symbol": "W0G-USDC",
+  "exposure": "multi",
+  "il_risk": "yes",
+  "snap_day": "2026-09-23",
+  "created_ts": 0,
+  "window_block": 51719400,
+  "window_end_ts": 1790228147,
+  "window_n": 50,
+  "window_tx": 31,
+  "window_unique": 16,
+  "top_legs": 12,
+  "window_oldest_ts": 1790155991,
+  "window_newest_ts": 1790225535,
+  "tvl_usd": 209596,
+  "tvl_7d_usd": 0,
+  "apy_cp": 907,
+  "apy_mean30_cp": 660,
+  "history_days": 2,
+  "llama_first_ts": 1790114581,
+  "verified": true,
+  "proxy": false,
+  "top_is_contract": true,
+  "stablecoin": false
+ }
+}
